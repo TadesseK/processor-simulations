@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/186.crafty/crafty.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.29006289599783486,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":12329043,\"conditional_branches\":8927032,\"direction_misses\":846360,\"direction_mpki\":8.46360000,\"conditional_miss_rate\":0.0948086665}\n",
+  "stderr": ""
+}

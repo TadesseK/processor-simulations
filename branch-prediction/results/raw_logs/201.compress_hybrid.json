@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/201.compress/compress.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.28216815699852305,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":14581367,\"conditional_branches\":11764885,\"direction_misses\":819948,\"direction_mpki\":8.19948000,\"conditional_miss_rate\":0.0696945189}\n",
+  "stderr": ""
+}

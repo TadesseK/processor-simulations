@@ -1,0 +1,32 @@
+FINAL INSTRUCTION STATUS
+ID   PC   Instruction                    ISSUE   EX        MEM       WB    COMMIT   STATUS
+0    0    Addi R1, R0, 1                 1       2-5       -         6     7        COMMITTED
+1    4    Addi R2, R0, 2                 1       6-9       -         10    11       COMMITTED
+2    8    Addi R3, R0, 3                 1       10-13     -         16    17       COMMITTED
+3    12   Addi R4, R0, 4                 1       14-17     -         18    19       COMMITTED
+4    16   Add.d F8, F2, F4               2       3-7       -         8     20       COMMITTED
+5    20   Add.d F10, F2, F4              2       4-8       -         9     21       COMMITTED
+6    24   Add.d F12, F2, F4              2       5-9       -         11    22       COMMITTED
+7    28   Add.d F14, F2, F4              2       6-10      -         12    23       COMMITTED
+8    32   Mult.d F16, F2, F4             3       4-10      -         13    24       COMMITTED
+9    36   Mult.d F18, F2, F4             3       5-11      -         15    25       COMMITTED
+10   40   Ld F20, 16(R0)                 3       4-6       7-10      14    26       COMMITTED
+11   44   Ld F22, 20(R0)                 3       7-9       11-14     17    27       COMMITTED
+
+REGISTER VALUES
+R0=0 R1=1 R2=2 R3=3 R4=4 R5=0 R6=0 R7=0
+R8=0 R9=0 R10=0 R11=0 R12=0 R13=0 R14=0 R15=0
+R16=0 R17=0 R18=0 R19=0 R20=0 R21=0 R22=0 R23=0
+R24=0 R25=0 R26=0 R27=0 R28=0 R29=0 R30=0 R31=0
+F0=0 F1=0 F2=3 F3=0 F4=7 F5=0 F6=0 F7=0
+F8=10 F9=0 F10=10 F11=0 F12=10 F13=0 F14=10 F15=0
+F16=21 F17=0 F18=21 F19=0 F20=1 F21=0 F22=2 F23=0
+F24=0 F25=0 F26=0 F27=0 F28=0 F29=0 F30=0 F31=0
+
+NON-ZERO MEMORY VALUES
+Address   Value
+16        1
+20        2
+
+TOTAL CYCLES: 27
+COUNTERS: issued=12, committed=12, issue_stalls=0, mispredictions=0, replays=0, forwarded_loads=0, btb_hits=0, squashed=0

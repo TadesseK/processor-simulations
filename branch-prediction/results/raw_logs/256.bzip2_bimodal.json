@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_bimodal",
+    "--json",
+    "traces/256.bzip2/bzip2.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2700334029941587,
+  "stdout": "{\"predictor\":\"bimodal\",\"instructions\":100000000,\"branches\":24747762,\"conditional_branches\":24586276,\"direction_misses\":11193,\"direction_mpki\":0.11193000,\"conditional_miss_rate\":0.0004552540}\n",
+  "stderr": ""
+}

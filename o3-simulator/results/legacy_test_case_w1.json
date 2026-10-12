@@ -1,0 +1,457 @@
+{
+  "cycles": 45,
+  "stats": {
+    "issued": 16,
+    "committed": 15,
+    "issue_stalls": 0,
+    "mispredictions": 2,
+    "replays": 0,
+    "forwarded_loads": 0,
+    "btb_hits": 2,
+    "squashed": 1
+  },
+  "reg_int": [
+    0,
+    0,
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reg_fp": [
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    3.0,
+    0.0,
+    7.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "memory": {
+    "4": 3.0,
+    "8": 2.0,
+    "12": 1.0,
+    "24": 6.0,
+    "28": 5.0,
+    "32": 7.0
+  },
+  "history": [
+    {
+      "seq": 0,
+      "pc": 0,
+      "pc_word": 0,
+      "instruction": "Ld F2 0(R1)",
+      "op": "ld",
+      "issue": 1,
+      "exe": [
+        2,
+        2
+      ],
+      "mem": [
+        3,
+        7
+      ],
+      "wb": 8,
+      "commit": 9,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 1.0,
+      "address": 12,
+      "forwarded_from": null
+    },
+    {
+      "seq": 1,
+      "pc": 4,
+      "pc_word": 1,
+      "instruction": "Mult.d F4 F2 F20",
+      "op": "mult.d",
+      "issue": 2,
+      "exe": [
+        9,
+        23
+      ],
+      "mem": [],
+      "wb": 24,
+      "commit": 25,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 3.0,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 2,
+      "pc": 8,
+      "pc_word": 2,
+      "instruction": "Ld F6 0(R2)",
+      "op": "ld",
+      "issue": 3,
+      "exe": [
+        4,
+        4
+      ],
+      "mem": [
+        8,
+        12
+      ],
+      "wb": 13,
+      "commit": 26,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 4.0,
+      "address": 32,
+      "forwarded_from": null
+    },
+    {
+      "seq": 3,
+      "pc": 12,
+      "pc_word": 3,
+      "instruction": "Add.d F6 F4 F6",
+      "op": "add.d",
+      "issue": 4,
+      "exe": [
+        25,
+        28
+      ],
+      "mem": [],
+      "wb": 29,
+      "commit": 30,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 7.0,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 4,
+      "pc": 16,
+      "pc_word": 4,
+      "instruction": "Sd F6 0(R2)",
+      "op": "sd",
+      "issue": 5,
+      "exe": [
+        6,
+        6
+      ],
+      "mem": [
+        31,
+        35
+      ],
+      "wb": null,
+      "commit": 35,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": 32,
+      "forwarded_from": null
+    },
+    {
+      "seq": 5,
+      "pc": 20,
+      "pc_word": 5,
+      "instruction": "Addi R1 R1 -4",
+      "op": "addi",
+      "issue": 6,
+      "exe": [
+        7,
+        7
+      ],
+      "mem": [],
+      "wb": 9,
+      "commit": 36,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 8,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 6,
+      "pc": 24,
+      "pc_word": 6,
+      "instruction": "Addi R2 R2 -4",
+      "op": "addi",
+      "issue": 7,
+      "exe": [
+        8,
+        8
+      ],
+      "mem": [],
+      "wb": 10,
+      "commit": 37,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 28,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 7,
+      "pc": 28,
+      "pc_word": 7,
+      "instruction": "Bne R1 R0 -12",
+      "op": "bne",
+      "issue": 8,
+      "exe": [
+        10,
+        10
+      ],
+      "mem": [],
+      "wb": null,
+      "commit": 38,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 8,
+      "pc": 32,
+      "pc_word": 8,
+      "instruction": "Add.d F20 F2 F2",
+      "op": "add.d",
+      "issue": 9,
+      "exe": [],
+      "mem": [],
+      "wb": null,
+      "commit": null,
+      "squashed": true,
+      "squash_cycle": 10,
+      "value": null,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 9,
+      "pc": 20,
+      "pc_word": 5,
+      "instruction": "Addi R1 R1 -4",
+      "op": "addi",
+      "issue": 12,
+      "exe": [
+        13,
+        13
+      ],
+      "mem": [],
+      "wb": 14,
+      "commit": 39,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 4,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 10,
+      "pc": 24,
+      "pc_word": 6,
+      "instruction": "Addi R2 R2 -4",
+      "op": "addi",
+      "issue": 13,
+      "exe": [
+        14,
+        14
+      ],
+      "mem": [],
+      "wb": 15,
+      "commit": 40,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 24,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 11,
+      "pc": 28,
+      "pc_word": 7,
+      "instruction": "Bne R1 R0 -12",
+      "op": "bne",
+      "issue": 14,
+      "exe": [
+        15,
+        15
+      ],
+      "mem": [],
+      "wb": null,
+      "commit": 41,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 12,
+      "pc": 20,
+      "pc_word": 5,
+      "instruction": "Addi R1 R1 -4",
+      "op": "addi",
+      "issue": 15,
+      "exe": [
+        16,
+        16
+      ],
+      "mem": [],
+      "wb": 17,
+      "commit": 42,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 0,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 13,
+      "pc": 24,
+      "pc_word": 6,
+      "instruction": "Addi R2 R2 -4",
+      "op": "addi",
+      "issue": 16,
+      "exe": [
+        17,
+        17
+      ],
+      "mem": [],
+      "wb": 18,
+      "commit": 43,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 20,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 14,
+      "pc": 28,
+      "pc_word": 7,
+      "instruction": "Bne R1 R0 -12",
+      "op": "bne",
+      "issue": 17,
+      "exe": [
+        18,
+        18
+      ],
+      "mem": [],
+      "wb": null,
+      "commit": 44,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 15,
+      "pc": 32,
+      "pc_word": 8,
+      "instruction": "Add.d F20 F2 F2",
+      "op": "add.d",
+      "issue": 20,
+      "exe": [
+        21,
+        24
+      ],
+      "mem": [],
+      "wb": 25,
+      "commit": 45,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 2.0,
+      "address": null,
+      "forwarded_from": null
+    }
+  ],
+  "config": {
+    "int_rs": 4,
+    "fp_add_rs": 3,
+    "fp_mul_rs": 2,
+    "lsq_size": 5,
+    "int_ex": 1,
+    "fp_add_ex": 4,
+    "fp_mul_ex": 15,
+    "ls_ex": 1,
+    "mem_cycles": 5,
+    "int_fus": 1,
+    "fp_add_fus": 1,
+    "fp_mul_fus": 1,
+    "ls_fus": 1,
+    "rob_entries": 64,
+    "issue_width": 1
+  },
+  "branch_offset_mode": "bytes",
+  "input_sha256": "fcdcb1c5e7d335e716f54000bbdc6a90d18e8ec4a13e849ba800e4359cffe2f5",
+  "recovery_events": [
+    {
+      "cycle": 10,
+      "reason": "branch",
+      "trigger_seq": 7,
+      "resume_cycle": 12,
+      "next_pc": 5,
+      "squashed": [
+        8
+      ]
+    },
+    {
+      "cycle": 18,
+      "reason": "branch",
+      "trigger_seq": 14,
+      "resume_cycle": 20,
+      "next_pc": 8,
+      "squashed": []
+    }
+  ],
+  "reference_match": true
+}

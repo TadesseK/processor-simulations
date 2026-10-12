@@ -1,0 +1,5 @@
+make: Entering directory '/workspace/scratch/1ffb769ae95e/submission/branch-prediction/src'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -Werror -o ../tests/test_predictor ../tests/test_predictor.cc
+../tests/test_predictor
+PASS: 8 test groups, 217 checks
+make: Leaving directory '/workspace/scratch/1ffb769ae95e/submission/branch-prediction/src'

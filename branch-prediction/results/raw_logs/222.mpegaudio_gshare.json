@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_gshare",
+    "--json",
+    "traces/222.mpegaudio/mpegaudio.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2160017039932427,
+  "stdout": "{\"predictor\":\"gshare\",\"instructions\":100000000,\"branches\":15371661,\"conditional_branches\":13021205,\"direction_misses\":218774,\"direction_mpki\":2.18774000,\"conditional_miss_rate\":0.0168013636}\n",
+  "stderr": ""
+}

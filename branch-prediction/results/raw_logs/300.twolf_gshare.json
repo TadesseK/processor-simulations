@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_gshare",
+    "--json",
+    "traces/300.twolf/twolf.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2954021370023838,
+  "stdout": "{\"predictor\":\"gshare\",\"instructions\":100000000,\"branches\":15192852,\"conditional_branches\":13098893,\"direction_misses\":2148945,\"direction_mpki\":21.48945000,\"conditional_miss_rate\":0.1640554664}\n",
+  "stderr": ""
+}

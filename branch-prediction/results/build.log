@@ -1,0 +1,5 @@
+make: Entering directory '/workspace/scratch/1ffb769ae95e/submission/branch-prediction/src'
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -o predict predict.cc trace.cc
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -DPREDICTOR_TYPE=bimodal_predictor -DPREDICTOR_NAME='"bimodal"' -o predict_bimodal predict.cc trace.cc
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic -DPREDICTOR_TYPE=gshare_predictor -DPREDICTOR_NAME='"gshare"' -o predict_gshare predict.cc trace.cc
+make: Leaving directory '/workspace/scratch/1ffb769ae95e/submission/branch-prediction/src'

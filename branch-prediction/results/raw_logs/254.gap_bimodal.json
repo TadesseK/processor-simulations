@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_bimodal",
+    "--json",
+    "traces/254.gap/gap.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2741467060041032,
+  "stdout": "{\"predictor\":\"bimodal\",\"instructions\":100000000,\"branches\":19762650,\"conditional_branches\":13838041,\"direction_misses\":967450,\"direction_mpki\":9.67450000,\"conditional_miss_rate\":0.0699123525}\n",
+  "stderr": ""
+}

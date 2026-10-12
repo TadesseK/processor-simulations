@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+"""Portable equivalent of the supplied `run traces` command."""
+import json
+import pathlib
+import subprocess
+import sys
+
+if len(sys.argv) != 2:
+    sys.exit(f"Usage: {sys.argv[0]} <trace-file-directory>")
+base = pathlib.Path(__file__).resolve().parent
+traces = sorted(pathlib.Path(sys.argv[1]).rglob("*.trace.*"))
+if not traces:
+    sys.exit(f"No compressed trace files found in {sys.argv[1]}")
+subprocess.run(["make", "-C", str(base / "src"), "predict"], check=True, stdout=sys.stderr)
+values = []
+for trace in traces:
+    output = subprocess.check_output([str(base / "src" / "predict"), "--json", str(trace)], text=True).strip()
+    mpki = json.loads(output)["direction_mpki"]
+    print(f"{str(trace):40s}\t{mpki:.3f}")
+    values.append(mpki)
+print(f"average MPKI: {sum(values)/len(values):.3f}")

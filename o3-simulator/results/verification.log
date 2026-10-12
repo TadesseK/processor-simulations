@@ -1,0 +1,41 @@
+Command: python -m unittest discover -s tests -v
+
+test_faulting_wrong_path_load_does_not_supply_a_value (test_recovery_edges.RecoveryEdgeTests.test_faulting_wrong_path_load_does_not_supply_a_value) ... ok
+test_invalid_correct_path_memory_address_is_reported (test_recovery_edges.RecoveryEdgeTests.test_invalid_correct_path_memory_address_is_reported) ... ok
+test_known_matching_store_survives_unknown_nonmatching_store (test_recovery_edges.RecoveryEdgeTests.test_known_matching_store_survives_unknown_nonmatching_store) ... ok
+test_younger_invalid_branch_target_waits_for_older_branch (test_recovery_edges.RecoveryEdgeTests.test_younger_invalid_branch_target_waits_for_older_branch) ... ok
+test_all_branch_conditions_and_program_end_target (test_simulator.SimulatorTests.test_all_branch_conditions_and_program_end_target) ... ok
+test_architectural_state_and_timing_at_all_issue_widths (test_simulator.SimulatorTests.test_architectural_state_and_timing_at_all_issue_widths) ... ok
+test_branch_recovery_fetches_at_n_plus_two_and_squashes_store (test_simulator.SimulatorTests.test_branch_recovery_fetches_at_n_plus_two_and_squashes_store) ... ok
+test_bundle_raw_dependencies (test_simulator.SimulatorTests.test_bundle_raw_dependencies) ... ok
+test_default_issue_width_and_case_insensitive_decoder (test_simulator.SimulatorTests.test_default_issue_width_and_case_insensitive_decoder) ... ok
+test_exact_legacy_fixtures_are_preserved (test_simulator.SimulatorTests.test_exact_legacy_fixtures_are_preserved) ... ok
+test_execution_is_out_of_order_and_commit_is_in_order (test_simulator.SimulatorTests.test_execution_is_out_of_order_and_commit_is_in_order) ... ok
+test_forwarding_search_skips_a_nonmatching_nearest_store (test_simulator.SimulatorTests.test_forwarding_search_skips_a_nonmatching_nearest_store) ... ok
+test_fp_units_are_pipelined (test_simulator.SimulatorTests.test_fp_units_are_pipelined) ... ok
+test_functional_unit_counts_change_start_capacity (test_simulator.SimulatorTests.test_functional_unit_counts_change_start_capacity) ... ok
+test_head_structural_hazard_blocks_younger_issue (test_simulator.SimulatorTests.test_head_structural_hazard_blocks_younger_issue) ... ok
+test_integer_unit_is_unpipelined (test_simulator.SimulatorTests.test_integer_unit_is_unpipelined) ... ok
+test_intended_full_loop_has_hand_calculated_results (test_simulator.SimulatorTests.test_intended_full_loop_has_hand_calculated_results) ... ok
+test_issue_width_must_be_between_one_and_four (test_simulator.SimulatorTests.test_issue_width_must_be_between_one_and_four) ... ok
+test_latest_matching_store_forwards_in_one_cycle (test_simulator.SimulatorTests.test_latest_matching_store_forwards_in_one_cycle) ... ok
+test_legacy_byte_offsets_match_translated_word_offsets (test_simulator.SimulatorTests.test_legacy_byte_offsets_match_translated_word_offsets) ... ok
+test_load_waits_for_known_matching_store_data (test_simulator.SimulatorTests.test_load_waits_for_known_matching_store_data) ... ok
+test_loop_predictor_learns_then_recovers_on_exit (test_simulator.SimulatorTests.test_loop_predictor_learns_then_recovers_on_exit) ... ok
+test_memory_port_is_single_and_nonpipelined (test_simulator.SimulatorTests.test_memory_port_is_single_and_nonpipelined) ... ok
+test_r0_is_never_renamed_or_modified (test_simulator.SimulatorTests.test_r0_is_never_renamed_or_modified) ... ok
+test_rat_recovery_retains_older_pending_producer (test_simulator.SimulatorTests.test_rat_recovery_retains_older_pending_producer) ... ok
+test_seeded_programs_match_independent_interpreter (test_simulator.SimulatorTests.test_seeded_programs_match_independent_interpreter) ... ok
+test_tiny_rob_and_lsq_eventually_make_progress (test_simulator.SimulatorTests.test_tiny_rob_and_lsq_eventually_make_progress) ... ok
+test_unresolved_nonaliasing_store_does_not_replay (test_simulator.SimulatorTests.test_unresolved_nonaliasing_store_does_not_replay) ... ok
+test_unresolved_older_store_alias_triggers_replay (test_simulator.SimulatorTests.test_unresolved_older_store_alias_triggers_replay) ... ok
+test_waw_and_war_capture_the_correct_versions (test_simulator.SimulatorTests.test_waw_and_war_capture_the_correct_versions) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.096s
+
+OK
+
+Command: python run_experiments.py
+
+Completed 104 width runs; all architectural states and committed paths match the independent interpreter.

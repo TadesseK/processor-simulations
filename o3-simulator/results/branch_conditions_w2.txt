@@ -1,0 +1,29 @@
+FINAL INSTRUCTION STATUS
+ID   PC   Instruction                    ISSUE   EX        MEM       WB    COMMIT   STATUS
+0    0    Beq R1, R2, 1                  1       2         -         -     3        COMMITTED
+1    4    Addi R3, R0, 10                1       3         -         4     5        COMMITTED
+2    8    Bne R1, R2, 1                  2       4         -         -     6        COMMITTED
+3    12   Addi R4, R0, 20                2       -         -         -     -        SQUASHED
+4    16   Beq R1, R1, 1                  3       -         -         -     -        SQUASHED
+5    20   Addi R5, R0, 30                3       -         -         -     -        SQUASHED
+6    16   Beq R1, R1, 1                  6       7         -         -     8        COMMITTED
+7    20   Addi R5, R0, 30                6       -         -         -     -        SQUASHED
+8    24   Bne R1, R1, 1                  9       10        -         -     11       COMMITTED
+9    28   Addi R6, R0, 40                9       11        -         12    13       COMMITTED
+
+REGISTER VALUES
+R0=0 R1=1 R2=2 R3=10 R4=0 R5=0 R6=40 R7=0
+R8=0 R9=0 R10=0 R11=0 R12=0 R13=0 R14=0 R15=0
+R16=0 R17=0 R18=0 R19=0 R20=0 R21=0 R22=0 R23=0
+R24=0 R25=0 R26=0 R27=0 R28=0 R29=0 R30=0 R31=0
+F0=0 F1=0 F2=0 F3=0 F4=0 F5=0 F6=0 F7=0
+F8=0 F9=0 F10=0 F11=0 F12=0 F13=0 F14=0 F15=0
+F16=0 F17=0 F18=0 F19=0 F20=0 F21=0 F22=0 F23=0
+F24=0 F25=0 F26=0 F27=0 F28=0 F29=0 F30=0 F31=0
+
+NON-ZERO MEMORY VALUES
+Address   Value
+(none)
+
+TOTAL CYCLES: 13
+COUNTERS: issued=10, committed=6, issue_stalls=0, mispredictions=2, replays=0, forwarded_loads=0, btb_hits=0, squashed=4

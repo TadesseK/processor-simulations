@@ -1,0 +1,88 @@
+164.gzip        bimodal   1502982 misses 15.02982 MPKI
+164.gzip        gshare    1247260 misses 12.47260 MPKI
+164.gzip        hybrid    1261706 misses 12.61706 MPKI
+175.vpr         bimodal   1467104 misses 14.67104 MPKI
+175.vpr         gshare    1341493 misses 13.41493 MPKI
+175.vpr         hybrid    1433739 misses 14.33739 MPKI
+176.gcc         bimodal   1934749 misses 19.34749 MPKI
+176.gcc         hybrid    1529825 misses 15.29825 MPKI
+176.gcc         gshare    1125353 misses 11.25353 MPKI
+181.mcf         bimodal   3324542 misses 33.24542 MPKI
+181.mcf         gshare    1583697 misses 15.83697 MPKI
+181.mcf         hybrid    1767979 misses 17.67979 MPKI
+186.crafty      bimodal   1307522 misses 13.07522 MPKI
+186.crafty      hybrid     846360 misses 8.46360 MPKI
+186.crafty      gshare     583690 misses 5.83690 MPKI
+197.parser      bimodal   1541674 misses 15.41674 MPKI
+197.parser      hybrid    1035735 misses 10.35735 MPKI
+197.parser      gshare    1000764 misses 10.00764 MPKI
+201.compress    hybrid     819948 misses 8.19948 MPKI
+201.compress    bimodal    935624 misses 9.35624 MPKI
+201.compress    gshare     783112 misses 7.83112 MPKI
+202.jess        bimodal    880918 misses 8.80918 MPKI
+202.jess        gshare     156166 misses 1.56166 MPKI
+202.jess        hybrid     175020 misses 1.75020 MPKI
+205.raytrace    bimodal    380626 misses 3.80626 MPKI
+205.raytrace    hybrid     342149 misses 3.42149 MPKI
+205.raytrace    gshare     275556 misses 2.75556 MPKI
+209.db          bimodal    647959 misses 6.47959 MPKI
+209.db          gshare     390945 misses 3.90945 MPKI
+209.db          hybrid     461313 misses 4.61313 MPKI
+213.javac       bimodal    318078 misses 3.18078 MPKI
+213.javac       gshare     226655 misses 2.26655 MPKI
+213.javac       hybrid     263842 misses 2.63842 MPKI
+222.mpegaudio   bimodal    315384 misses 3.15384 MPKI
+222.mpegaudio   gshare     218774 misses 2.18774 MPKI
+222.mpegaudio   hybrid     260376 misses 2.60376 MPKI
+227.mtrt        hybrid     326838 misses 3.26838 MPKI
+227.mtrt        bimodal    370627 misses 3.70627 MPKI
+227.mtrt        gshare     265749 misses 2.65749 MPKI
+228.jack        bimodal    769065 misses 7.69065 MPKI
+228.jack        hybrid     394642 misses 3.94642 MPKI
+228.jack        gshare     303287 misses 3.03287 MPKI
+252.eon         bimodal    940466 misses 9.40466 MPKI
+252.eon         hybrid     313939 misses 3.13939 MPKI
+252.eon         gshare     180662 misses 1.80662 MPKI
+253.perlbmk     gshare     255424 misses 2.55424 MPKI
+253.perlbmk     bimodal    595501 misses 5.95501 MPKI
+253.perlbmk     hybrid     469974 misses 4.69974 MPKI
+254.gap         hybrid     479727 misses 4.79727 MPKI
+254.gap         bimodal    967450 misses 9.67450 MPKI
+254.gap         gshare     392556 misses 3.92556 MPKI
+255.vortex      bimodal    191601 misses 1.91601 MPKI
+255.vortex      hybrid     123933 misses 1.23933 MPKI
+255.vortex      gshare     122218 misses 1.22218 MPKI
+256.bzip2       bimodal     11193 misses 0.11193 MPKI
+256.bzip2       hybrid       7602 misses 0.07602 MPKI
+256.bzip2       gshare       9412 misses 0.09412 MPKI
+300.twolf       bimodal   2194152 misses 21.94152 MPKI
+300.twolf       gshare    2148945 misses 21.48945 MPKI
+300.twolf       hybrid    2204560 misses 22.04560 MPKI
+{
+  "aggregates": {
+    "hybrid": {
+      "direction_misses": 14519207,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 7.2596035,
+      "conditional_miss_rate": 0.05270863600554987
+    },
+    "bimodal": {
+      "direction_misses": 20597217,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 10.2986085,
+      "conditional_miss_rate": 0.07477345102802956
+    },
+    "gshare": {
+      "direction_misses": 12611718,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 6.305859,
+      "conditional_miss_rate": 0.045783936647961654
+    }
+  },
+  "hybrid_improvement_vs_bimodal_percent": 29.508889477641567,
+  "hybrid_wins_vs_bimodal": 19,
+  "hybrid_wins_vs_gshare": 1
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_bimodal",
+    "--json",
+    "traces/222.mpegaudio/mpegaudio.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.1656557940004859,
+  "stdout": "{\"predictor\":\"bimodal\",\"instructions\":100000000,\"branches\":15371661,\"conditional_branches\":13021205,\"direction_misses\":315384,\"direction_mpki\":3.15384000,\"conditional_miss_rate\":0.0242207998}\n",
+  "stderr": ""
+}

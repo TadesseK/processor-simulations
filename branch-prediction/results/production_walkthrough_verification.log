@@ -1,0 +1,8 @@
+Actual compile command, from the workspace root:
+g++ -std=c++17 -Wall -Wextra -Werror submission/branch-prediction/tests/production_walkthrough.cc -o tmp/production_walkthrough_packaged
+Compilation exit code: 0; no compiler warnings.
+Actual execution command, from the workspace root:
+tmp/production_walkthrough_packaged > submission/branch-prediction/results/production_walkthrough.csv
+Execution exit code: 0.
+All 8 CSV rows match report Table 3.
+Portable reproduction commands are in tests/README.md.

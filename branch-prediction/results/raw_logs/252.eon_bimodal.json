@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_bimodal",
+    "--json",
+    "traces/252.eon/eon.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.1453479289993993,
+  "stdout": "{\"predictor\":\"bimodal\",\"instructions\":100000000,\"branches\":11225403,\"conditional_branches\":7724960,\"direction_misses\":940466,\"direction_mpki\":9.40466000,\"conditional_miss_rate\":0.1217438019}\n",
+  "stderr": ""
+}

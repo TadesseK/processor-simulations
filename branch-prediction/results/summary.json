@@ -1,0 +1,28 @@
+{
+  "aggregates": {
+    "hybrid": {
+      "direction_misses": 14519207,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 7.2596035,
+      "conditional_miss_rate": 0.05270863600554987
+    },
+    "bimodal": {
+      "direction_misses": 20597217,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 10.2986085,
+      "conditional_miss_rate": 0.07477345102802956
+    },
+    "gshare": {
+      "direction_misses": 12611718,
+      "instructions": 2000000000,
+      "conditional_branches": 275461634,
+      "average_mpki": 6.305859,
+      "conditional_miss_rate": 0.045783936647961654
+    }
+  },
+  "hybrid_improvement_vs_bimodal_percent": 29.508889477641567,
+  "hybrid_wins_vs_bimodal": 19,
+  "hybrid_wins_vs_gshare": 1
+}

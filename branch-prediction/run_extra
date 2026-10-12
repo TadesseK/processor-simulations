@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+import sys
+sys.exit("Optional target/loop extra-credit predictor is not implemented. Use ./run traces for the required direction predictor.")

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_bimodal",
+    "--json",
+    "traces/205.raytrace/raytrace.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.4708628239968675,
+  "stdout": "{\"predictor\":\"bimodal\",\"instructions\":100000000,\"branches\":23833770,\"conditional_branches\":12201864,\"direction_misses\":380626,\"direction_mpki\":3.80626000,\"conditional_miss_rate\":0.0311940864}\n",
+  "stderr": ""
+}

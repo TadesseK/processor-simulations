@@ -1,0 +1,10 @@
+Current report verification
+Branch report: 13 pages, 10 exact source excerpts, 8 tables.
+Tomasulo report: 22 pages, 20 exact source excerpts, 4 full programs, 14 tables.
+Removed scope/supporting-material section and repository-status notes.
+Replaced generic caveats with direct descriptions of implementation and measured results.
+All result-table rows and implementation source files unchanged.
+All 35 final pages visually inspected. No clipped text, overlapping content, detached table caption or broken table header found.
+Times New Roman, 1.25 line spacing, justified paragraphs, centered titles and table text, no footer.
+Header update: both reports display Tadesse Kebede Bahiru and COSC 6385: Computer Architecture.
+Both first pages visually checked; all remaining pages match their previous render pixel for pixel.

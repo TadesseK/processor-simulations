@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_gshare",
+    "--json",
+    "traces/205.raytrace/raytrace.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.47891965100279776,
+  "stdout": "{\"predictor\":\"gshare\",\"instructions\":100000000,\"branches\":23833770,\"conditional_branches\":12201864,\"direction_misses\":275556,\"direction_mpki\":2.75556000,\"conditional_miss_rate\":0.0225831070}\n",
+  "stderr": ""
+}

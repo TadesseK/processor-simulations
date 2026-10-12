@@ -1,0 +1,9 @@
+step,PC,actual,GHRbefore,hash,set,tag,bmiindex,bmibefore,bmipred,globalhitway,globalbefore,finalpred,bmiafter,way0after,way1after,victimafter,GHRafter
+1,0x140,T,0,0x140,5,0,320,1,NT,-1,-1,NT,2,tag=0:counter=2,invalid,1,1
+2,0x141,T,1,0x140,5,0,321,1,NT,0,2,T,2,tag=0:counter=3,invalid,1,3
+3,0x142,NT,3,0x141,5,1,322,1,NT,-1,-1,NT,0,tag=0:counter=3,tag=1:counter=1,0,6
+4,0x146,T,6,0x140,5,0,326,1,NT,0,3,T,2,tag=0:counter=3,tag=1:counter=1,1,13
+5,0x14f,NT,13,0x142,5,2,335,1,NT,-1,-1,NT,0,tag=0:counter=3,tag=2:counter=1,0,26
+6,0x159,T,26,0x143,5,3,345,1,NT,-1,-1,NT,2,tag=3:counter=2,tag=2:counter=1,1,53
+7,0x177,NT,53,0x142,5,2,375,1,NT,1,1,NT,0,tag=3:counter=2,tag=2:counter=0,0,106
+8,0x129,NT,106,0x143,5,3,297,1,NT,0,2,T,0,tag=3:counter=1,tag=2:counter=0,1,212

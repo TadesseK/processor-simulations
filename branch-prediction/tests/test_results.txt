@@ -1,0 +1,21 @@
+$ g++ -std=c++17 -Wall -Wextra -Werror tests/test_predictor.cc -o tests/test_predictor
+exit code: 0
+$ ./tests/test_predictor
+exit code: 0
+PASS: 8 test groups, 217 checks
+$ g++ -std=c++17 -Wall -Wextra -Werror tests/appendix_trace.cc -o tests/appendix_trace
+exit code: 0
+$ ./tests/appendix_trace
+exit code: 0
+Appendix B: 22 matching rows, 9 mistakes, 13 correct predictions
+$ g++ -std=c++17 -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer tests/test_predictor.cc -o tests/test_predictor_sanitized
+exit code: 0
+$ ./tests/test_predictor_sanitized
+exit code: 1
+==24==Can't open /proc/23/task for reading.
+==23==LeakSanitizer has encountered a fatal error.
+==23==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==23==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+$ ASAN_OPTIONS=detect_leaks=0 ./tests/test_predictor_sanitized
+exit code: 0
+PASS: 8 test groups, 217 checks

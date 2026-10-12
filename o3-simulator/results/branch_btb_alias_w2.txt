@@ -1,0 +1,49 @@
+FINAL INSTRUCTION STATUS
+ID   PC   Instruction                    ISSUE   EX        MEM       WB    COMMIT   STATUS
+0    0    Beq R0, R0, 1                  1       2         -         -     3        COMMITTED
+1    4    Addi R2, R0, 99                1       -         -         -     -        SQUASHED
+2    8    Addi R1, R1, -1                4       5         -         6     7        COMMITTED
+3    12   Addi R3, R3, 1                 4       6         -         7     8        COMMITTED
+4    16   Add.d F8, F2, F4               5       6-8       -         9     10       COMMITTED
+5    20   Sub.d F10, F4, F2              5       7-9       -         11    12       COMMITTED
+6    24   Add R4, R3, R0                 6       8         -         10    13       COMMITTED
+7    28   Addi R5, R0, 2                 6       7         -         8     14       COMMITTED
+8    32   Bne R1, R0, -9                 7       9         -         -     15       COMMITTED
+9    36   Addi R6, R3, 10                7       -         -         -     -        SQUASHED
+10   0    Beq R0, R0, 1                  11      12        -         -     16       COMMITTED
+11   4    Addi R2, R0, 99                11      -         -         -     -        SQUASHED
+12   8    Addi R1, R1, -1                14      15        -         16    17       COMMITTED
+13   12   Addi R3, R3, 1                 14      16        -         17    18       COMMITTED
+14   16   Add.d F8, F2, F4               15      16-18     -         19    20       COMMITTED
+15   20   Sub.d F10, F4, F2              15      17-19     -         21    22       COMMITTED
+16   24   Add R4, R3, R0                 16      18        -         20    23       COMMITTED
+17   28   Addi R5, R0, 2                 16      17        -         18    24       COMMITTED
+18   32   Bne R1, R0, -9                 17      19        -         -     25       COMMITTED
+19   36   Addi R6, R3, 10                17      -         -         -     -        SQUASHED
+20   0    Beq R0, R0, 1                  21      22        -         -     26       COMMITTED
+21   4    Addi R2, R0, 99                21      -         -         -     -        SQUASHED
+22   8    Addi R1, R1, -1                24      25        -         26    27       COMMITTED
+23   12   Addi R3, R3, 1                 24      26        -         27    28       COMMITTED
+24   16   Add.d F8, F2, F4               25      26-28     -         29    30       COMMITTED
+25   20   Sub.d F10, F4, F2              25      27-29     -         31    32       COMMITTED
+26   24   Add R4, R3, R0                 26      28        -         30    33       COMMITTED
+27   28   Addi R5, R0, 2                 26      27        -         28    34       COMMITTED
+28   32   Bne R1, R0, -9                 27      29        -         -     35       COMMITTED
+29   36   Addi R6, R3, 10                27      30        -         32    36       COMMITTED
+
+REGISTER VALUES
+R0=0 R1=0 R2=0 R3=3 R4=3 R5=2 R6=13 R7=0
+R8=0 R9=0 R10=0 R11=0 R12=0 R13=0 R14=0 R15=0
+R16=0 R17=0 R18=0 R19=0 R20=0 R21=0 R22=0 R23=0
+R24=0 R25=0 R26=0 R27=0 R28=0 R29=0 R30=0 R31=0
+F0=0 F1=0 F2=2 F3=0 F4=4 F5=0 F6=0 F7=0
+F8=6 F9=0 F10=2 F11=0 F12=0 F13=0 F14=0 F15=0
+F16=0 F17=0 F18=0 F19=0 F20=0 F21=0 F22=0 F23=0
+F24=0 F25=0 F26=0 F27=0 F28=0 F29=0 F30=0 F31=0
+
+NON-ZERO MEMORY VALUES
+Address   Value
+(none)
+
+TOTAL CYCLES: 36
+COUNTERS: issued=30, committed=25, issue_stalls=0, mispredictions=5, replays=0, forwarded_loads=0, btb_hits=0, squashed=5

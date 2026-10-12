@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.o
+branch-prediction/src/predict
+branch-prediction/src/test_predictor
+branch-prediction/src/predict_bimodal
+branch-prediction/src/predict_gshare

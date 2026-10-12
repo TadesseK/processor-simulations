@@ -1,0 +1,8 @@
+PASS: 29 recorded source/trace hashes match current files
+PASS: all 60 raw logs have successful return codes and consistent exact counts/MPKI
+PASS: aggregate counts equal the 20 complete traces per predictor
+PASS: missing trace exits nonzero without fabricating MPKI
+PASS: filename containing spaces and a quote decodes to the recorded bzip2 count
+PASS: corrupt compressed trace exits nonzero without fabricating MPKI
+PASS: corrected portable runner consumes exact JSON and completes a full single-trace smoke
+PASS: averaging the exact hybrid MPKI values before display rounds to 7.260

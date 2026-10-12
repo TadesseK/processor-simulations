@@ -1,0 +1,263 @@
+{
+  "cycles": 43,
+  "stats": {
+    "issued": 7,
+    "committed": 7,
+    "issue_stalls": 0,
+    "mispredictions": 0,
+    "replays": 0,
+    "forwarded_loads": 2,
+    "btb_hits": 0,
+    "squashed": 0
+  },
+  "reg_int": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "reg_fp": [
+    0.0,
+    0.0,
+    3.0,
+    0.0,
+    7.0,
+    0.0,
+    9.0,
+    0.0,
+    9.0,
+    0.0,
+    7.0,
+    0.0,
+    16.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.0,
+    0.0
+  ],
+  "memory": {
+    "16": 9.0,
+    "20": 7.0
+  },
+  "history": [
+    {
+      "seq": 0,
+      "pc": 0,
+      "pc_word": 0,
+      "instruction": "Mult.d F30, F2, F4",
+      "op": "mult.d",
+      "issue": 1,
+      "exe": [
+        2,
+        26
+      ],
+      "mem": [],
+      "wb": 27,
+      "commit": 28,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 21.0,
+      "address": null,
+      "forwarded_from": null
+    },
+    {
+      "seq": 1,
+      "pc": 4,
+      "pc_word": 1,
+      "instruction": "Sd F2, 16(R0)",
+      "op": "sd",
+      "issue": 1,
+      "exe": [
+        2,
+        2
+      ],
+      "mem": [
+        29,
+        32
+      ],
+      "wb": null,
+      "commit": 32,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": 16,
+      "forwarded_from": null
+    },
+    {
+      "seq": 2,
+      "pc": 8,
+      "pc_word": 2,
+      "instruction": "Sd F4, 20(R0)",
+      "op": "sd",
+      "issue": 1,
+      "exe": [
+        3,
+        3
+      ],
+      "mem": [
+        33,
+        36
+      ],
+      "wb": null,
+      "commit": 36,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": 20,
+      "forwarded_from": null
+    },
+    {
+      "seq": 3,
+      "pc": 12,
+      "pc_word": 3,
+      "instruction": "Sd F8, 16(R0)",
+      "op": "sd",
+      "issue": 1,
+      "exe": [
+        4,
+        4
+      ],
+      "mem": [
+        37,
+        40
+      ],
+      "wb": null,
+      "commit": 40,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": null,
+      "address": 16,
+      "forwarded_from": null
+    },
+    {
+      "seq": 4,
+      "pc": 16,
+      "pc_word": 4,
+      "instruction": "Ld F6, 16(R0)",
+      "op": "ld",
+      "issue": 2,
+      "exe": [
+        5,
+        5
+      ],
+      "mem": [
+        6,
+        6
+      ],
+      "wb": 7,
+      "commit": 41,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 9.0,
+      "address": 16,
+      "forwarded_from": 3
+    },
+    {
+      "seq": 5,
+      "pc": 20,
+      "pc_word": 5,
+      "instruction": "Ld F10, 20(R0)",
+      "op": "ld",
+      "issue": 2,
+      "exe": [
+        6,
+        6
+      ],
+      "mem": [
+        7,
+        7
+      ],
+      "wb": 8,
+      "commit": 42,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 7.0,
+      "address": 20,
+      "forwarded_from": 2
+    },
+    {
+      "seq": 6,
+      "pc": 24,
+      "pc_word": 6,
+      "instruction": "Add.d F12, F6, F10",
+      "op": "add.d",
+      "issue": 2,
+      "exe": [
+        9,
+        11
+      ],
+      "mem": [],
+      "wb": 12,
+      "commit": 43,
+      "squashed": false,
+      "squash_cycle": null,
+      "value": 16.0,
+      "address": null,
+      "forwarded_from": null
+    }
+  ],
+  "config": {
+    "int_rs": 16,
+    "fp_add_rs": 16,
+    "fp_mul_rs": 16,
+    "lsq_size": 16,
+    "int_ex": 1,
+    "fp_add_ex": 3,
+    "fp_mul_ex": 25,
+    "ls_ex": 1,
+    "mem_cycles": 4,
+    "int_fus": 1,
+    "fp_add_fus": 1,
+    "fp_mul_fus": 1,
+    "ls_fus": 1,
+    "rob_entries": 64,
+    "issue_width": 4
+  },
+  "branch_offset_mode": "words",
+  "input_sha256": "5aeeec2956d762c50567cd2ea32dfcd347a3abf4037fc7686d99ab3d895038b2",
+  "recovery_events": [],
+  "reference_match": true
+}

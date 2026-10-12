@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_gshare",
+    "--json",
+    "traces/252.eon/eon.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.16094469599920558,
+  "stdout": "{\"predictor\":\"gshare\",\"instructions\":100000000,\"branches\":11225403,\"conditional_branches\":7724960,\"direction_misses\":180662,\"direction_mpki\":1.80662000,\"conditional_miss_rate\":0.0233867878}\n",
+  "stderr": ""
+}

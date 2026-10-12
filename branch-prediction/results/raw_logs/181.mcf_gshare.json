@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict_gshare",
+    "--json",
+    "traces/181.mcf/mcf.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.342875592999917,
+  "stdout": "{\"predictor\":\"gshare\",\"instructions\":100000000,\"branches\":23794267,\"conditional_branches\":21700420,\"direction_misses\":1583697,\"direction_mpki\":15.83697000,\"conditional_miss_rate\":0.0729800161}\n",
+  "stderr": ""
+}

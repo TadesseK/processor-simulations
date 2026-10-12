@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/253.perlbmk/perlbmk.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.4259463540001889,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":20085076,\"conditional_branches\":13537118,\"direction_misses\":469974,\"direction_mpki\":4.69974000,\"conditional_miss_rate\":0.0347174339}\n",
+  "stderr": ""
+}

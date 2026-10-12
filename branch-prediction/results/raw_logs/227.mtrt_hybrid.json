@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/227.mtrt/mtrt.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.46139135300472844,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":23837761,\"conditional_branches\":12512685,\"direction_misses\":326838,\"direction_mpki\":3.26838000,\"conditional_miss_rate\":0.0261205329}\n",
+  "stderr": ""
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/252.eon/eon.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.20000355299998773,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":11225403,\"conditional_branches\":7724960,\"direction_misses\":313939,\"direction_mpki\":3.13939000,\"conditional_miss_rate\":0.0406395632}\n",
+  "stderr": ""
+}

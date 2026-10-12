@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/254.gap/gap.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.3113074230059283,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":19762650,\"conditional_branches\":13838041,\"direction_misses\":479727,\"direction_mpki\":4.79727000,\"conditional_miss_rate\":0.0346672625}\n",
+  "stderr": ""
+}

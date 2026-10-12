@@ -1,0 +1,45 @@
+Independent correctness review
+==============================
+
+Command, from o3-simulator/:
+python review/independent_verifier.py
+
+Actual output:
+PASS: 1000 randomized architectural checks; seed 92731; 250 programs x widths 1-4
+PASS: provisional newest-known-store forwarding with late nonalias; F3=9; replays=0
+PASS: provisional newest-known-store forwarding with late alias; F3=7; replays=1
+PASS: speculative invalid load and later-issued dependent discarded; correct fetch resumes at n+2
+PASS: speculative invalid branch target discarded; correct fetch resumes at n+2
+
+The independent sequential interpreter processes assembly text without using
+the simulator's parser. Comparisons cover all 32 integer registers, all 32 FP
+registers, all 256 abstract byte-addressed memory slots and the committed PC
+sequence. The 250 generated programs contain 35 instructions each and include
+every stated instruction, forward conditional branches, integer dependencies,
+FP renaming, loads, stores, and delayed store addresses. Each program is run at
+widths 1, 2, 3 and 4. ROB/RS/LSQ sizes, unit counts and latencies are randomized
+with the fixed seed recorded above.
+
+The directed checks exercise provisional forwarding from an older known
+matching store when a newer older-store address remains unknown, both with
+and without a subsequent memory-order violation. They also exercise invalid
+memory addresses and invalid branch targets on paths that an older branch
+eventually squashes. Both branch cases check the specified n+2 correct fetch.
+
+Review findings addressed before these runs:
+- A provisional load must use its newest known matching store even when a
+  newer store address is unknown; a later matching store triggers replay.
+- Faulting loads must not supply an unavailable value to later-issued
+  dependent instructions before a possible speculative squash.
+- Speculative invalid branch targets must be deferred until in-order commit.
+
+Limitations: this review is not exhaustive. Randomized branches are forward
+branches; loop tests and timing/resource invariants are in the primary tests.
+Architectural comparisons do not certify every possible cycle schedule.
+The primary test suite and supplied-program results remain separate evidence.
+
+The branch predictor source and driver were also reviewed. Global hits select
+the final direction, global misses use the bimodal fallback, both components train,
+pre-update history indices are retained, counters saturate, and invalid-first
+two-way LRU replacement follows the documented configuration. No additional
+branch-predictor correctness issue was found by this independent source review.

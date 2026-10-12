@@ -1,0 +1,11 @@
+{
+  "command": [
+    "src/predict",
+    "--json",
+    "traces/255.vortex/vortex.trace.bz2"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2537736899976153,
+  "stdout": "{\"predictor\":\"hybrid\",\"instructions\":100000000,\"branches\":16640406,\"conditional_branches\":11073761,\"direction_misses\":123933,\"direction_mpki\":1.23933000,\"conditional_miss_rate\":0.0111915906}\n",
+  "stderr": ""
+}

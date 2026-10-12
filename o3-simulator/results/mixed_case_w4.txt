@@ -1,0 +1,28 @@
+FINAL INSTRUCTION STATUS
+ID   PC   Instruction                    ISSUE   EX        MEM       WB    COMMIT   STATUS
+0    0    aDdI r10, r0, 18               1       2         -         3     4        COMMITTED
+1    4    lD f10, 0(r10)                 1       4         5-8       9     10       COMMITTED
+2    8    aDd.d f12, f10, f2             1       10-12     -         13    14       COMMITTED
+3    12   SuB.d f14, f12, f10            1       14-16     -         17    18       COMMITTED
+4    16   MuLt.d f16, f14, f2            2       18-25     -         26    27       COMMITTED
+5    20   sD f16, 2(r10)                 2       5         28-31     -     31       COMMITTED
+6    24   bNe r0, r0, 1                  2       3         -         -     32       COMMITTED
+7    28   aDd r11, r10, r10              2       4         -         5     33       COMMITTED
+
+REGISTER VALUES
+R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0
+R8=0 R9=0 R10=18 R11=36 R12=0 R13=0 R14=0 R15=0
+R16=0 R17=0 R18=0 R19=0 R20=0 R21=0 R22=0 R23=0
+R24=0 R25=0 R26=0 R27=0 R28=0 R29=0 R30=0 R31=0
+F0=0 F1=0 F2=1.5 F3=0 F4=0 F5=0 F6=0 F7=0
+F8=0 F9=0 F10=2.5 F11=0 F12=4 F13=0 F14=1.5 F15=0
+F16=2.25 F17=0 F18=0 F19=0 F20=0 F21=0 F22=0 F23=0
+F24=0 F25=0 F26=0 F27=0 F28=0 F29=0 F30=0 F31=0
+
+NON-ZERO MEMORY VALUES
+Address   Value
+18        2.5
+20        2.25
+
+TOTAL CYCLES: 33
+COUNTERS: issued=8, committed=8, issue_stalls=0, mispredictions=0, replays=0, forwarded_loads=0, btb_hits=0, squashed=0
