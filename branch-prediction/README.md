@@ -1,4 +1,4 @@
-# Assignment 1: Branch Predictor Implementation
+# Branch Predictor Implementation
 
 This folder is the supplied `cbp2-infrastructure-v2` project renamed
 `branch-prediction`. Its original relative layout is preserved: the required
